@@ -1,0 +1,271 @@
+/* /* Global styles */
+/* * { */
+/*     box-sizing: border-box; */
+/*     display: inherit; */
+/*     margin: unset; */
+/* } */
+
+/* html { */
+/*     display: flow-root; */
+/*     text-align: left; */
+/*     font-size: medium; */
+/*     font-weight: 400; */
+/*     color: #464646; */
+/*     background-color: rgb(221, 192, 135); */
+/* } */
+
+/* /* Header styles */
+/* header { */
+/*     display: block; */
+/*     width: 100%; */
+/*     min-height: 4ch; */
+/*     height: max-content;     */
+/*     max-height: 10ch; */
+/* } */
+
+/* /* Item styles */
+/* .item { */
+/*     display: block; */
+/*     padding: 3px 1px 4px 2px; */
+/*     width: auto; */
+/*     min-width: max-content; */
+/*     max-width: none; */
+/*     background-color: rgba(131, 127, 92, 0.788); */
+/* } */
+
+/* .item-title {   */
+/*     color: black; */
+/*     font-weight: bold; */
+/*     font-size: larger; */
+/*     background-color: rgba(245, 245, 220, 0.445); */
+/* } */
+
+/* /* Grid styles */
+/* .small-grid { */
+/*     display: grid; */
+/*     grid-template-columns: 1fr 1fr 1fr; */
+/*     width: auto; */
+/*     height: auto; */
+/*     min-width: 70%; */
+/*     max-width: 90%; */
+/*     border: 1px solid black; */
+/* } */
+
+/* /* Image styles */
+/* #GalleryView * img { */
+/*     cursor: zoom-in; */
+/* } */
+
+/* /* Object styles */
+/* object.thumbnail { */
+/*     display: block; */
+/*     margin: 0px; */
+/*     padding-left: 0%; */
+/*     padding-right: 0%; */
+/*     flex-grow: 0; */
+/*     flex-shrink: 1; */
+/*     /* transform: scale(.50); */
+/* } */
+
+body {
+    font-family: 
+    'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    position: relative;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 5px 0;
+
+    background-color: #333;
+    color: #007BFF;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #FF7F00;
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+}
+
+p{
+    box-sizing: content-box;
+    text-indent: 3ch;
+}
+
+nav ul li a {
+    margin-right: 15px;
+    color: #007BFF;
+    /* This will apply the blue color to the navigation links */
+}
+
+
+nav ul li a::before {
+    background-color: #007BFF;
+    content: '';
+    width: 10px;
+    height: 1ch;
+    display: inline-block;
+}
+
+#siteTitle {
+
+    outline: #f4f4f420 3px solid;
+    margin: 0;
+    padding: unset;
+    padding-right: 20px;
+    text-align: right;
+    /* Aligns the title to the right */
+    background-color: #FF7F00;
+    text-shadow: #333 3px 1px;
+}
+
+.site-banner {
+    margin: 0;
+    padding: 0 20px;
+    text-align: right;
+    display: flow-root;
+    /* Aligns the title to the right */
+}
+
+.site-banner:hover a{
+    background-color:#f8a551;
+}
+
+.site-banner:hover a:hover{
+    color:white;
+    background-color: #ec8c2c;
+}
+
+
+
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+}
+
+footer * {
+    width: 100%;
+    text-decoration: none;
+    position: sticky;
+    bottom: 0;
+}
+
+
+
+footer a:hover:not(.discrete-link) {
+        color: #0056b3;
+    }
+
+
+.button {
+    background-color: #007BFF;
+    color:#464646;
+    border: 1px solid #FF7F00;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.latest-projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-item {
+    nav-down: auto;S
+    /* This means the items will grow and shrink as needed, but won't be smaller than 200px */
+    margin: 10px;
+    /* Add some space around each item */
+    border: #333;
+}
+
+a {
+    nav-index: auto;
+    color: #FF7F00;
+}
+
+#latest-projects {
+    position: relative;
+    margin: auto;
+}
+ #mail-link:hover  {
+    background-color:#464646;
+    color:white;
+ }
+
+#siteTitleSub {
+    line-height: 1ch;
+}
+
+.site-banner:hover .banner-subtitle{
+    text-decoration: underling #FF7F00;
+}
+
+.discrete-link {
+    text-decoration: none;
+    text-shadow: #f4f4f420;
+}
+
+#flat-on-track {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+img {
+    box-shadow: 8px -4px 5px #FF7F00;
+    border: #FF7F0030 groove 3px;
+    border-left:unset;
+    border-left: 1px solid black;
+    border-bottom: unset;
+    border-bottom: 1px solid #464646;
+}
+
+/* 1. Base/Reset styles */
+/* This includes styles for HTML, body, a, p, h1-h6, etc. */
+
+/* 2. Layout styles */
+/* This includes styles for header, footer, main, aside, .container, .row, etc. */
+
+/* 3. Component styles */
+/* This includes styles for .button, .card, .list, .modal, etc. */
+
+/* 4. Page-specific styles */
+/* This includes styles for .home-page, .about-page, .contact-page, etc. */
+
+/* 5. State styles */
+/* This includes styles for .is-active, .is-hidden, .has-error, etc. */
+
+/* 6. Responsive styles */
+/* This includes media queries and styles for different screen sizes */
